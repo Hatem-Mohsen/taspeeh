@@ -20,20 +20,20 @@ class TasbeehHomePage extends StatefulWidget {
 }
 
 class _TasbeehHomePageState extends State<TasbeehHomePage> {
-  int _counter = 0;
+  int counter = 0;
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
-      if (_counter > 100) {
-        _counter = 0;
+      counter++;
+      if (counter > 100) {
+        counter = 0;
       }
     });
   }
 
   void _resetCounter() {
     setState(() {
-      _counter = 0;
+      counter = 0;
     });
   }
 
@@ -87,7 +87,7 @@ class _TasbeehHomePageState extends State<TasbeehHomePage> {
               ),
               child: Center(
                 child: Text(
-                  '$_counter',
+                  '$counter',
                   style: TextStyle(
                     fontSize: 60,
                     color: Colors.black,
